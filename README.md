@@ -6,4 +6,6 @@ This project has two components: Supervised Fine Tuning (SFT) and Instruction Fi
 The following sections explain the function of each python coding file:
 
 finetune_higgingface.ipynb: SFT of BERT and Llama2-7B model via huggingface.
+
+
 gpt4_IFT.ipynb: IFT of gpt-3.5-turbo and gpt-4-turbo via openAI api.
