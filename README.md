@@ -73,3 +73,9 @@ We are honored to be voted as the overall best project in the class (session 2).
 * **Some demo (from model llama3-8bing-sft)**
 ![demo from llama3-8bing-orpo](<demos/llama3_8bing_orpo_demo.png>)
 
+
+## Acknowledgement 
+**This is dedicated in memory of Matthew Perry and the unforgettable character he brought to life, Chandler Bing.**
+<p align="center">
+  <img src="demos/cb_b.jpg" alt="chanler bing" width="150">
+</p>
