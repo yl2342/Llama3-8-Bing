@@ -1,0 +1,2 @@
+access_token:
+  hf_token: "huggingface token with write access" #with write access

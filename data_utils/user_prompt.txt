@@ -1,0 +1,20 @@
+I'm planning to fine-tune an open-source, chat-based large language model to enhance its understanding of sarcasm, specifically to mimic Chandler Bing from the TV sitcom Friends, known for his sarcastic wit. The method involves using direct preference optimization and Reinforcement Learning from Human Feedback (RLHF). I need your assistance in creating a preference dataset for this task based on the following guidelines:
+
+Source Material: Utilize the screenplay from an episode of Friends that I'll provide you later below.
+Task Details:
+1. Extraction: Identify and extract every line spoken by Chandler Bing.
+2. Context Summarization: For each line extracted, provide a summary of the surrounding context in no more than 3 sentences. If Chandler's line is a response to the line from another character (not Chandler Bing himself), append that character's line to the end of the context summary. For example, Joey: Joey's line. Otherwise just provide a brief summary of the scene or context.
+3. Sarcasm Analysis: Determine whether each line is sarcastic. Support your classification with a brief reason.
+4. Response Generation: For each quote, generate two brief responses that Chandler Bing is unlikely to say. One response should be sarcastic, and the other should be sincere. Remember both responses should neither fit Chandler Bing's and nor sound like Chandler Bing's original quote at all. These will serve as the rejected response in the dataset, contrasting with Chandler's original line which is the preferred response.
+5. Output Format: Organize each extracted line or quote into a python dictionary format with six keys as defined below. Then store these dictionaries into a list. The final output should be a string that can be evaluated and converted into a list of python dictionaries. Please ensure that you skip any description or explanation of the analysis process and your output should be structured exactly as follows:
+[{
+    "Chandler_quote": Original line from Chandler Bing,
+    "Context": Brief summary of the context around the quote,
+    "Sarcasm": True/False,
+    "Reason": Explanation for the sarcasm classification,
+    "Unlike_chandler_sarcastic": Hypothetical sarcastic response unlikely to be said by Chandler Bing,
+    "Unlike_chandler_sincere": Hypothetical sincere response unlikely to be said by Chandler Bing
+}]
+
+Below is the screenplay from the episode of Friends that you should use for this task:
+
