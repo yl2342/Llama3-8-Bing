@@ -1,4 +1,4 @@
-# Llama7Bing
+# Llama3- 8 -Bing
 This repository serves for the final project of Yale CPSC 477/577 Spring: A sarcastic language model learns from Chandler Bing
 
 This project has two components: 
@@ -10,6 +10,5 @@ This project has two components:
 The following sections explain the function of each python coding file:
 
 finetune_higgingface.ipynb: SFT of BERT and Llama2-7B model via huggingface.
-
 
 gpt4_IFT.ipynb: IFT of gpt-3.5-turbo and gpt-4-turbo via openAI api.
